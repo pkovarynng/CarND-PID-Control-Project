@@ -5,7 +5,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Project Writeup
 
-The writeup report for the submission can be found in the [writeup_report.md](https://github.com/pkovarynng/CarND-PID-Control-Project/writeup_report.md) file.
+The writeup report for the submission can be found in the [writeup_report.md](https://github.com/pkovarynng/CarND-PID-Control-Project/blob/master/writeup_report.md) file.
 
 ## Dependencies
 

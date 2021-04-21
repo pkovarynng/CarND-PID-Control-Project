@@ -17,3 +17,8 @@ The three coefficients are the following:
 | Kp         | proportional          |
 | Ki         | integral              |
 | Kd         | differential          |
+
+## Tuning
+
+The proportional error term, p_error in the code, is the CTE. The product Kp \* p_error is the component of the steering angle that is proportional to the CTE. The effect of this component is that the vehicle oscillates around the center line. If I set only the Kp component in the code to non-zero and left the other two coeffs as zero then the oscillations became large around the first turn and the vehicle lost the road very shortly.
+

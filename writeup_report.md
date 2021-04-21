@@ -35,3 +35,5 @@ The final parameters, the PID coefficients, were chosen through manual tuning. T
 | Kp         | 0.25          |
 | Ki         | 0              |
 | Kd         | 0.75          |
+
+[Watch the final video](https://youtu.be/1XFYtiHuXaU)

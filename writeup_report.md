@@ -22,13 +22,13 @@ The three coefficients are the following:
 
 The proportional error term, p_error in the code, is the CTE. The product Kp \* p_error is the component of the steering angle that is proportional to the CTE. The effect of this component is that the vehicle oscillates around the center line. If I set only the Kp component in the code to non-zero and left the other two coeffs as zero then the oscillations became large around the first turn and the vehicle lost the road very shortly.
 
-The differential error term, d_error in the code, is the difference of the CTEs at the current and the previous timestamps. The product Kd \* d_error is the component of the steering angle that mitigates the oscillation effects of the proportional component. And indeed, if I used Kd along with Kp, then the steering no longer oscillated around turns, the vehicle could make it through the first turn of the track and then could successfully finish a whole lap.
+The differential error term, d_error in the code, is the difference of the CTEs at the current and the previous timestamps. The product Kd \* d_error is the component of the steering angle that mitigates the large oscillation effects of the proportional component. And indeed, if I used Kd along with Kp, then the steering no longer oscillated around turns, the vehicle could make it through the first turn of the track and then could successfully finish a whole lap.
 
 The integral error term, i_error in the code, is the cummulative error, the sum of the CTEs up to the current timestamp. The product Ki \* i_error is the component of the steering angle that can compensate for a bias from incorrectly calibrated steering. I did not find that the vehicle in the simulator preferred one of the two sides, so I did not use this coefficient, left it at zero.
 
 ## Final Parameters
 
-The final parameters, the PID coefficients, were chosen through manual tuning. The final set of values were the following:
+The final parameters, the PID coefficients, were chosen through manual tuning. The final set of values are the following:
 
 | coeff name | value |
 |:----------:|:---------------------:|
